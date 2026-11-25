@@ -18,7 +18,7 @@ app.use(errorHandler);
 app.use("/products", productRoute);
 app.use("/auth", authRoute);
 
-app.get("/health", (req, res) => {
+app.get("/", (req, res) => {
     res.send("API Running");
 })
 

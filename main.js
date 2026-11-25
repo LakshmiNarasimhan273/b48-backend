@@ -19,7 +19,7 @@ app.use("/products", productRoute);
 app.use("/auth", authRoute);
 
 app.get("/", (req, res) => {
-    res.send("API Running");
+    res.send("B48 Ecommerce API - Status: Running");
 })
 
 dbConnection();

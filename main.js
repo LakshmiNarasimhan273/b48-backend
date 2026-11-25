@@ -18,6 +18,10 @@ app.use(errorHandler);
 app.use("/products", productRoute);
 app.use("/auth", authRoute);
 
+app.get("/health", (req, res) => {
+    res.send("API Running");
+})
+
 dbConnection();
 app.listen(PORT, () => {
     console.log(`Server running on ${PORT}`);
